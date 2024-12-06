@@ -6,9 +6,7 @@ This project demonstrates how to use Recurrent Neural Networks (RNNs) to forecas
 
 1. **SimpleRNN-based model**
 2. **LSTM-based model**
-
-The rationale for selecting one stock (ABB) is to streamline training and testing. If the approach works effectively on a single stock, it can be extended to other stocks, thereby reducing experimentation time.
-
+   
 Both implementations integrate sentiment analysis from tweets, technical indicators, and data smoothing techniques to improve the models’ ability to capture complex temporal patterns and long-range dependencies in financial data.
 
 ## Key Features and Methodologies
@@ -56,7 +54,13 @@ Both implementations integrate sentiment analysis from tweets, technical indicat
      nltk.download('vader_lexicon')
      ```
 
-3. **Running the Scripts:**
+
+3. **Select the Stock Symbol:**
+   - Open either simple_rnn_model.py or lstm_model.py and set:
+   - Stock Symbol: ABB (This can be changed to any symbol the user prefers.)
+  
+
+4. **Running the Scripts:**
    - For SimpleRNN:
      ```bash
      python simple_rnn_model.py
@@ -66,9 +70,10 @@ Both implementations integrate sentiment analysis from tweets, technical indicat
      python lstm_model.py
      ```
 
-4. **Outputs:**
+5. **Outputs:**
    - Training progress and metrics (RMSE, MAE) in the console.
    - Plots showing predicted vs. actual prices, plus next-day prediction.
+   - 
 
 ## Notes and Future Directions
 
